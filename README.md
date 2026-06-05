@@ -1,4 +1,5 @@
-<img width="570" height="282" alt="drxover" src="https://github.com/user-attachments/assets/0923c536-54c9-4a12-90ed-d87e91027be9" />
+<img width="570" height="282" alt="drxover" src="https://github.com/user-attachments/assets/b479dbbb-139c-4f1a-88d9-5ceeb78d7f75" />
+
 
 **Doom Retro** has long been my favorite source port for the unique features it puts forth, but there were also certain features that I felt were missing such that it couldn't be my main.  However, Mr. Harding has been hard at work expanding the port, he and I were able to work together to get my mods and his port playing nicely together, and with today's release of v6.1 I'm proud to present **The Dead Simple QoL Pack**, exclusively for **Doom Retro**.  The classics never felt better :')
 
@@ -16,6 +17,8 @@ This is one I've already released before, but it's got a small update to it.  It
 - Replacement of D_ or H_E2M4, aka "They're Going to Get You", with D_ or H_DEAD, aka "The Demon's Dead" from Doom II.  I tried to go for something with at the very least similar vibes, but not too similar because I hate D_E2M4 and I used to literally stop playing around that point because that song is so irritating.  I've tried it several times as part of my playtesting and trust me: it's an improvement.
 
 **Doom 2 QOL**
+
+<img width="1920" height="1200" alt="Screenshot 2026-06-04 224529" src="https://github.com/user-attachments/assets/cb2e5aee-0122-4452-9ab1-1d7578fa402e" />
 
 With the release of Doom Retro v6.1, Mr. Harding has added compatibility with The Master Levels, and with it the ability to autoload separately for doom2.wad and Doom 2-based PWADs.  Thankfully, this means I was able to finally port this QOL WAD to Doom Retro!  This WAD contains:
 - New level graphics with the author's name for Hell On Earth and both expansions
@@ -38,13 +41,42 @@ With the release of Doom Retro v6.1, Mr. Harding has added compatibility with Th
 
 And now, finally, the Doom Retro-exclusive version of **The Dead Simple Sprite Mod**, coming to you in both MBF21 and Vanilla flavors!  Bringing you vanilla animations that make sense and sprites that don't suck!  Both versions are 100% palette-compatible with BTSX and Eviternity I+II 
 Both versions contain:
-- Improved animations and sounds for all weapons using exactly their vanilla behavior.  It was very important to me that this mod behaves as close to vanilla Doom as possible, and I think it does :)
+- Improved animations and sounds for all weapons using exactly* their vanilla behavior.  It was very important to me that this mod behaves as close to vanilla Doom as possible, and I think it does :)
 - An SMG replacing the chaingun
 - Pistol and SMG Zombies to replace the rifle and chaingun zombies, so the ammunition compatibility actually makes sense.
 - Improved timing on Possessed Human firing animations, along with the firing animations on the Arachnotron and Spider Mastermind.
 - New sprites for the Pinky, HellKnight, Baron, and Pain Elemental.  This is where enemy sprites stop in the vanilla version, as I only wanted to change the monsters' appearance if I felt it was an _objective_ improvement, rather than my own preference.
+- Non-blinding Archvile fire
 - Gorier death for the Archvile (deserved), and more realistic death animation for the Cyberdemon.
 - Smoothed projectile explosions.
 - Several new decor sprites
 - Truncated strings and new graphics for Doom Retro's AltHUD
-- 
+- A compatibility patch for Eviternity II
+
+<img width="1916" height="458" alt="Screenshot 2026-06-04 225453" src="https://github.com/user-attachments/assets/ba597c40-e3cd-4324-909b-1b811cbdbb73" />
+
+**BRIGHTMAPS: We got em!**
+
+<img width="1014" height="550" alt="brightmaps" src="https://github.com/user-attachments/assets/5726fd70-00cc-4a8d-8e1a-615a6e4cbf9d" />
+
+\* - Exclusive to the MBF21 version:
+- Fists raise and lower faster and attack silently
+- The chainsaw has a pull-start animation
+- The pistol has a draw animation, along with one for the slide locking back on empty.
+- The SSG flips up to draw using the CloseShotgun2 animation, meaning it can be fired almost instantly when drawn. It also has a special animation for running out of ammo.
+- The Chaingun has a special animation when out of ammo showing the bolt locking to the rear.
+- Plasma Rifle has a draw animation, and finally tries to make sense of the 20-tic cooldown animation by having you reload.
+- Imps, Cacodemons, Hell Knights, and Barons have separate attacks for ranged and melee ranges; it's no longer the same command that checks for distance right before the attack happens.
+- New Sprites for the Revenant and Spider Mastermind.
+- New animations for select previously-static decorations.
+
+**HOW TO USE**
+
+First decide whether you want to use the MBF21 or Vanilla version.  There are two folders in the main ZIP named autoload_mbf21 and autoload_vanilla.  Rename the one you want to simply "autoload" (no quotes) and place it in your Doom Retro folder.  You'll also want to set the following cvars in the DR console for the best experience:
+
+r_althud on
+r_althudfont off
+r_fixspriteoffsets off
+
+That's it; you're done!
+I hope you enjoy this unholy compilation of stuff.  As always, comments, feedback, and constructive criticism are all welcome.  All other complaints can be sent to rpitchford@gearbox.com.
